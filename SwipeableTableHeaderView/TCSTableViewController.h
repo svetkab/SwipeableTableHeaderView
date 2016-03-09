@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TCSTableViewController.h
 //  SwipeableTableHeaderView
 //
 //  Created by Svetlana Brodskaya on 3/8/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TCSTableViewController : UITableViewController
 
 @end
-

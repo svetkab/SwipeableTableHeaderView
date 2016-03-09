@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		291D7B301C8FA814007C2D07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 291D7B2F1C8FA814007C2D07 /* main.m */; };
 		291D7B331C8FA814007C2D07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 291D7B321C8FA814007C2D07 /* AppDelegate.m */; };
-		291D7B361C8FA814007C2D07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 291D7B351C8FA814007C2D07 /* ViewController.m */; };
 		291D7B391C8FA814007C2D07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291D7B371C8FA814007C2D07 /* Main.storyboard */; };
 		291D7B3B1C8FA814007C2D07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291D7B3A1C8FA814007C2D07 /* Assets.xcassets */; };
 		291D7B3E1C8FA814007C2D07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291D7B3C1C8FA814007C2D07 /* LaunchScreen.storyboard */; };
 		291D7B491C8FA814007C2D07 /* SwipeableTableHeaderViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 291D7B481C8FA814007C2D07 /* SwipeableTableHeaderViewTests.m */; };
 		291D7B541C8FA815007C2D07 /* SwipeableTableHeaderViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 291D7B531C8FA815007C2D07 /* SwipeableTableHeaderViewUITests.m */; };
+		291D7B641C8FA835007C2D07 /* SwipeableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291D7B621C8FA835007C2D07 /* SwipeableHeaderView.m */; };
+		291D7B651C8FA835007C2D07 /* SwipeableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 291D7B631C8FA835007C2D07 /* SwipeableHeaderView.xib */; };
+		291D7B681C8FA94B007C2D07 /* TCSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 291D7B671C8FA94B007C2D07 /* TCSTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,6 @@
 		291D7B2F1C8FA814007C2D07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		291D7B311C8FA814007C2D07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		291D7B321C8FA814007C2D07 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		291D7B341C8FA814007C2D07 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		291D7B351C8FA814007C2D07 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		291D7B381C8FA814007C2D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		291D7B3A1C8FA814007C2D07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		291D7B3D1C8FA814007C2D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,11 @@
 		291D7B4F1C8FA815007C2D07 /* SwipeableTableHeaderViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeableTableHeaderViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		291D7B531C8FA815007C2D07 /* SwipeableTableHeaderViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeableTableHeaderViewUITests.m; sourceTree = "<group>"; };
 		291D7B551C8FA815007C2D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		291D7B611C8FA835007C2D07 /* SwipeableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeableHeaderView.h; sourceTree = "<group>"; };
+		291D7B621C8FA835007C2D07 /* SwipeableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeableHeaderView.m; sourceTree = "<group>"; };
+		291D7B631C8FA835007C2D07 /* SwipeableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwipeableHeaderView.xib; sourceTree = "<group>"; };
+		291D7B661C8FA94B007C2D07 /* TCSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSTableViewController.h; sourceTree = "<group>"; };
+		291D7B671C8FA94B007C2D07 /* TCSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +108,16 @@
 			children = (
 				291D7B311C8FA814007C2D07 /* AppDelegate.h */,
 				291D7B321C8FA814007C2D07 /* AppDelegate.m */,
-				291D7B341C8FA814007C2D07 /* ViewController.h */,
-				291D7B351C8FA814007C2D07 /* ViewController.m */,
 				291D7B371C8FA814007C2D07 /* Main.storyboard */,
+				291D7B611C8FA835007C2D07 /* SwipeableHeaderView.h */,
+				291D7B621C8FA835007C2D07 /* SwipeableHeaderView.m */,
+				291D7B631C8FA835007C2D07 /* SwipeableHeaderView.xib */,
 				291D7B3A1C8FA814007C2D07 /* Assets.xcassets */,
 				291D7B3C1C8FA814007C2D07 /* LaunchScreen.storyboard */,
 				291D7B3F1C8FA814007C2D07 /* Info.plist */,
 				291D7B2E1C8FA814007C2D07 /* Supporting Files */,
+				291D7B661C8FA94B007C2D07 /* TCSTableViewController.h */,
+				291D7B671C8FA94B007C2D07 /* TCSTableViewController.m */,
 			);
 			path = SwipeableTableHeaderView;
 			sourceTree = "<group>";
@@ -243,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				291D7B651C8FA835007C2D07 /* SwipeableHeaderView.xib in Resources */,
 				291D7B3E1C8FA814007C2D07 /* LaunchScreen.storyboard in Resources */,
 				291D7B3B1C8FA814007C2D07 /* Assets.xcassets in Resources */,
 				291D7B391C8FA814007C2D07 /* Main.storyboard in Resources */,
@@ -270,8 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				291D7B361C8FA814007C2D07 /* ViewController.m in Sources */,
+				291D7B641C8FA835007C2D07 /* SwipeableHeaderView.m in Sources */,
 				291D7B331C8FA814007C2D07 /* AppDelegate.m in Sources */,
+				291D7B681C8FA94B007C2D07 /* TCSTableViewController.m in Sources */,
 				291D7B301C8FA814007C2D07 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
